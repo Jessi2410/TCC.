@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurante Sabores do Nordeste</title>
+        <link href="daqui.css" rel="stylesheet"/>
+        
+</head>
+<body>
+
+<h2>Reserva de Restaurante</h2>
+
+<form action="/action_page.php">
+  Nome:<br>
+  <input type="text" name="nome" required><br>
+  Data e Hora da Reserva:<br>
+  <input type="datetime-local" name="data_hora" required><br>
+  Número de Pessoas:<br>
+  <input type="number" name="num_pessoas" required><br><br>
+
+  <!--Botão para finalizar a reserva-->
+  <button><a href="index.html">finalizarReserva</a></button>
+
+
+  <!--Botão voltar para  a página inicial-->
+  <button><a href="index.html">Voltar</a></button>
+
+</form>
+<script>
+ function incluir (){
+  // ler todos os campos do formulario
+  var nome = document.frmexemplo.txtnome.value;
+  var dataehorario = document.frmexemplo.txtdataehorario.value;
+  var numerosdepessoas =document.frmexemplo.txtnumerosdepessoas.value;
+  
+  //guardar no objeto produto
+   var reserva ={"nome": nome, "data e horario":dataehorario, "numeros de pessoas": numerosdepessoas}
+  //guardar o objeto na lista
+  lista.push(reserva);
+  window.alert('reserva confirmada');
+  mostrar_lista();
+  }//fim da função
+</script>
+
+</body>
+</html>
+    
